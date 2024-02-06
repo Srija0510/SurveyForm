@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<title>
+Build A Survey Form Using Html and CSS
+</title>
+<style>
+/* Styling the Body element i.e. color, font, Alignment */
+body{
+background-color:Brown;
+font-family:Arial Black;
+text-align:center;
+}
+/* Styling the Form (Color, Padding, Shadow) */
+Form{
+background-color:White;
+max-width: 475px;
+margin: 30px auto;
+padding: 30px 20px;
+box-shadow: 2px 5px 10px Blackrgba(0, 0, 0, 0.5);
+}
+/* Styling Form-control class */
+.Form-control {
+text-align:left;
+margin-bottom:25px;
+}
+/* Styling Form-control label */
+.Form-control label{
+display:block;
+margin-bottom:0px;
+}
+/* Styling Form-control input, select, textarea */
+.Form-control input,
+.Form-control select,
+.Form-control textarea {
+border: 1px solid Black;
+border-radius: 2px;
+font-family: inherit;
+padding: 10px;
+width: 90%;
+}
+/* Styling Form-control Radio button and Checkbox */
+.Form-control input[type="radio"],
+.Form-control input[type="Checkbox"] {
+display: inline-block;
+width:auto;
+}
+/* Styling Form-control button */
+button {
+background-color:Brown;
+border: 1px solid Black;
+border-radius: 2px;
+font-family: inherit;
+font-size: 21px;
+display: block;
+width: 100%;
+margin-top: 50px;
+margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+<h1> INFORMATION TECHNOLOGY SURVEY FORM</h1>
+<!-- Create Form -->
+<Form Id="Form">
+<!-- Details -->
+<div class="Form-control">
+<label for="name" id="label-name">
+Name
+</label>
+<!-- Input Type Text -->
+<input type="text"
+id="name"
+placeholder="Enter Your Name"/>
+</div>
+<div class="Form-control">
+<label for="email"id="label-email">
+Email
+</label>
+<!-- Input Type Email-->
+<input type="email"
+id="email"
+placeholder="Enter Your Email"/>
+</div>
+<div class="Form-control">
+<label for="age"id="label-age">
+Age
+</label>
+<!-- Input Type Text-->
+<input type="age"
+placeholder="Enter Your Age"/>
+</div>
+</div>
+<div class="Form-control">
+<label fo="role" id="label-role">
+Which option Best Describes You?
+</label>
+<!-- Dropdown options-->
+<select name="role"id="role">
+<option value="Student">Student</option>
+<option value="Intern">Intern</option>
+<option value="Professional">Professional</option>
+<option value="Other">Other</option>
+</select>
+</div>
+<div class="form-control">
+<label>
+Would You Recommend GreeksforGreeks to a Friend?
+</label>
+<!-- Input Type Radio Button-->
+<label for="recommed-1">
+<input type="radio"
+id="recommed-1"
+name="recommed">Yes</input>
+</label>
+<label for="recommed-2">
+<input type="radio"
+id="recommed-2"
+name="recommed">No</input>
+</label>
+<label for="recommed-3">
+<input type="radio"
+id="recommed-3"
+name="recommed">Maybe</input>
+</label>
+</div>
+<div class="Form-control">
+<label>Languages and Frameworks Known
+<small>(Check all that apply)</small>
+</label>
+<!-- Input Type Checkbox -->
+<label for="inp-1">
+<input type="checkbox"name="inp">C</input></label>
+<label for="inp-2">
+<input type="checkbox"name="inp">C++</input></label>
+<label for="inp-3">
+<input type="checkbox"name="inp">C#</input></label>
+<label for="inp-4">
+<input type="checkbox"name="inp">JAVA</input></label>
+<label for="inp-5">
+<input type="checkbox"name="inp">PYTHON</input></label>
+<label for="inp-6">
+<input type="checkbox"name="inp">JAVASCRIPT</input></label>
+<label for="inp-7">
+<input type="checkbox"name="inp">REACT</input></label>
+<label for="inp-7">
+<input type="checkbox"name="inp">Angular</input></label>
+<label for="inp-7">
+<input type="checkbox"name="inp">Django</input></label>
+<label for="inp-7">
+<input type="checkbox"name="inp">Spring</input></label>
+</div>
+<div class="Form-control">
+<label for="comment">
+Any Comments or Suggestions
+</label>
+<!-- multi-line text input control -->
+<textarea name="comment" id="comment"
+placeholder="Enter Your Comment Here">
+</textarea>
+</div>
+<!-- multi-line text input control -->
+<button type="Submit" value="Submit">
+Submit
+</button>
+</Form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
